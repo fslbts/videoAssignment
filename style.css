@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    background-color: rgb(17, 247, 47);
+}
+h1::before{
+    content:"Age-";
+}
+h1::after{
+    content:"-Pore";
+}
+
+/* Button Part */
+.click-div{
+    text-align: center;
+    margin-top: 50px;
+}
+.button{
+    text-decoration: none;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.button::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    z-index: -1;
+}
+.button:hover::before{
+    width: 100%;
+}
+
+/* Button-2 Part */
+.button-2{
+    text-decoration: none;
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.button-2::before{
+    content: "";
+    width: 100%;
+    height: 0%;
+    background-color: #34495e;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    z-index: -1;
+}
+.button-2:hover::before{
+    height: 100%;
+}
+
+/* Button-3 Part */
+.button-3{
+    text-decoration: none;
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.button-3::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: #27ae60;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .4s;
+    z-index: -1;
+}
+.button-3:hover::before{
+    width: 100%;
+}
+
+/* Button-4 Part */
+.button-4{
+    text-decoration: none;
+    background-color: #16a085;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.button-4::before{
+    content: "";
+    width: 100%;
+    height: 0%;
+    background-color: #e74c3c;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: .4s;
+    z-index: -1;
+}
+.button-4:hover::before{
+    height: 100%;
+}
+
+/* Qutesion Part */
+.box{
+    margin-top: 50px;
+    text-align: center;
+}
+p::before{
+    content: '"';
+}
+p::after{
+    content: '"';
+}
+
+/* List Part */
+.list{
+    width: 600px;
+    margin: 50px auto;
+}
+.list ul{
+    list-style: none;
+}
+.list ul li::before{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.list-2{
+    width: 600px;
+    margin: 50px auto;
+}
+.list-2 ul{
+    list-style: none;
+}
+.list-2 ul li::before{
+    content: "\f560";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 5px;
+    color: #e74c3c;
+}
+.list-3{
+    width: 600px;
+    margin: 50px auto;
+}
+.list-3 ul{
+    list-style: none;
+}
+.list-3 ul li::before{
+    content: "\f14a";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 5px;
+    color: green;
+}
